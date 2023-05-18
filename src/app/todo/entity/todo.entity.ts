@@ -7,6 +7,7 @@ import {
 
 @Entity({ name: 'todos' })
 export class TodoEntity {
+  
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
@@ -24,4 +25,5 @@ export class TodoEntity {
 
   @CreateDateColumn({ name: 'deleted_at' })
   deleteAt: string;
+
 }
